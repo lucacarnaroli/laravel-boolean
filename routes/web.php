@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 // });
 
 // homepage
-Route::get('/','HomeController@index')->name('home.home');
+Route::get('/','HomeController@index')->name('home.index');
 
 Route::get('/privacy','HomeController@privacy')->name('home.privacy');
 
