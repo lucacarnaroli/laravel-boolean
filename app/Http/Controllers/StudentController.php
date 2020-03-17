@@ -24,10 +24,11 @@ class StudentController extends Controller
     {
         
     }
-    // creo una variabile nella quale richiamo la $private students
+
+    // creo una funzione nella quale richiamo la $private students
     public function getStudents()
     {
         $this->students = config('students.students');
-        dd(config('students.students'));
+        // dd(config('students.students'));
     }
 }

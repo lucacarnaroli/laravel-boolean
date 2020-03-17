@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  height: 100px;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar .navbar-list {
+  margin: 20px;
+}
+
+.navbar .navbar-list li {
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+}
+
+.navbar .navbar-list li a {
+  text-decoration: none;
+}
+
+.navbar .logo {
+  margin: 35px 0 0 35px;
+  font-size: 20px;
+}
+
+.nav-footer {
+  background-color: lightsalmon;
+  height: 150px;
+}
+
+.nav-footer .nav-list-footer {
+  float: right;
+  margin: 20px;
+  text-align: right;
+}
+
+.nav-footer .nav-list-footer li {
+  list-style: none;
+  margin: 20px;
+}
+
+.nav-footer .nav-list-footer li a {
+  text-decoration: none;
+}
+
+.box-card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-card .card {
+  width: calc(100% / 2 - 20px);
+  background-color: ivory;
+  margin: 10px;
+}
+
