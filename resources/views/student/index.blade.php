@@ -2,14 +2,20 @@
 
 @section('content')
     <div class="box-card">
-        @foreach (config('students.students') as $student)
+        @foreach (config('students.students') as $key => $student)
         <div class="card">
             <img src="{{$student['img']}}">
-            <h2>
-                {{$student['name']}} ({{$student['age']}} anni)
-            </h2>
-            <h4>Assunt{{($student['genere'] == 'm') ? 'o':'a'}} da {{$student['work']}}</h4>
-            <p>{{$student['description']}}</p>
+            <div class="text">
+                <a href="{{route('student.show',['id' => $key])}}">
+                    <h2>
+                        {{$student['name']}} ({{$student['age']}} anni)
+                    </h2>
+                </a>
+            </div>
+            <div class="info">
+                <h4>Assunt{{($student['genere'] == 'm') ? 'o':'a'}} da {{$student['work']}}</h4>
+                <p>{{$student['description']}}</p>
+            </div>
         </div>
         @endforeach
     </div>

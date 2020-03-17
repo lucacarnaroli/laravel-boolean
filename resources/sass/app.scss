@@ -1,3 +1,9 @@
+@mixin clearfix {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -53,5 +59,17 @@
         width: calc(100% / 2 - 20px);
         background-color: ivory;
         margin: 10px;
+        padding: 10px;
+        img , .text {
+            float: left;
+        }
+        .info {
+            @include clearfix();
+            padding-top: 15px;
+        }
+        img {
+            width: 20%;
+            margin-right: 15px;
+        }
     }
 }

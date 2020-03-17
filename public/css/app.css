@@ -61,5 +61,23 @@
   width: calc(100% / 2 - 20px);
   background-color: ivory;
   margin: 10px;
+  padding: 10px;
+}
+
+.box-card .card img,
+.box-card .card .text {
+  float: left;
+}
+
+.box-card .card .info {
+  content: "";
+  clear: both;
+  display: table;
+  padding-top: 15px;
+}
+
+.box-card .card img {
+  width: 20%;
+  margin-right: 15px;
 }
 
