@@ -7,24 +7,32 @@
 
 .navbar {
   height: 100px;
-  background-color: lightblue;
+  background-color: whitesmoke;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .navbar .navbar-list {
-  margin: 20px;
+  margin: 15px;
 }
 
 .navbar .navbar-list li {
   list-style: none;
   display: inline-block;
-  margin: 20px;
+  margin: 15px;
 }
 
 .navbar .navbar-list li a {
   text-decoration: none;
+}
+
+.navbar .navbar-list .button {
+  padding: 8px;
+  border-radius: 10px;
+  background-color: lightgreen;
+  border: 1px solid white;
+  font-size: 15px;
 }
 
 .navbar .logo {
@@ -33,7 +41,7 @@
 }
 
 .nav-footer {
-  background-color: lightsalmon;
+  background-color: #1B3C59;
   height: 150px;
 }
 
@@ -50,6 +58,7 @@
 
 .nav-footer .nav-list-footer li a {
   text-decoration: none;
+  color: white;
 }
 
 .box-card {

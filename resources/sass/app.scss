@@ -13,19 +13,26 @@
 
 .navbar{
     height: 100px;
-    background-color: lightblue;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     .navbar-list {
-        margin: 20px;
+        margin: 15px;
         li {
             list-style: none;
             display: inline-block;
-            margin: 20px;
+            margin: 15px;
             a {
                 text-decoration: none;
             }
+        }
+        .button {
+            padding: 8px;
+            border-radius: 10px;
+            background-color: lightgreen;
+            border: 1px solid white;
+            font-size: 15px;
         }
     }
     .logo {
@@ -35,7 +42,7 @@
 }
 
 .nav-footer {
-    background-color: lightsalmon;
+    background-color: #1B3C59;
     height: 150px;
     .nav-list-footer {
         float: right;
@@ -47,6 +54,7 @@
 
             a {
                 text-decoration: none;
+                color: white;
             }
         }
     }

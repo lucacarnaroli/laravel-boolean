@@ -17,7 +17,7 @@
                 <li><a href="">Corso</a></li>
                 <li><a class="{{(Request::route()->getName() == 'student.index') ? 'active' : ''}}" href="{{route('student.index')}}">Dopo corso</a></li>
                 <li><a href="">Lezione gratuita</a></li>
-                <li><a href=""><button>Candidati ora</button></a></li>
+                <li><a href=""><button class="button">Candidati ora</button></a></li>
                 
             </ul>
         </nav>
