@@ -1,6 +1,11 @@
 @extends('layouts.layout')
 
 @section('content')
+    <select name="filter" id="filter">
+        <option value="All">All</option>
+        <option value="man">Man</option>
+        <option value="women">Women</option>
+    </select>
     <div class="box-card">
         @foreach (config('students.students') as $key => $student)
         <div class="card">
