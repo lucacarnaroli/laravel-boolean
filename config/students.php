@@ -8,8 +8,7 @@ return [
             'work'=>'Disc spa',
             'description'=>'Da giocatore professionista di basket a sviluppatore web. 6 mesi di impegno da MVP e un memorabile tap-in targato Boolean hanno garantito ad Alessandro un solido futuro come web developer.',
             'genere'=> 'm',
-            'id' => 0
-            
+            'id' => 0,
         ],
         [
             'img'=>'https://www.boolean.careers/images/students/poggini.png',
@@ -40,6 +39,8 @@ return [
             'id' => 3
         ]
 
-        ]
+        ],
+
+        'genders' => ['m', 'f', 'all']
 
 ];
