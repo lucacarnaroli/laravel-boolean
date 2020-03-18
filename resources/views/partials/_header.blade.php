@@ -13,7 +13,8 @@
         <nav class="navbar">
             <div class="logo">Boolean</div>
             <ul class="navbar-list">
-                <li><a {{route('home.index')}} href="">Home</a></li>
+                {{-- inserisco {{route('home.index')}} all'interno di href, così in qualsiasi pagina sia (es. Dopo corso) al click su home mi riporterà su home   --}}
+                <li><a href="{{route('home.index')}}">Home</a></li>
                 <li><a href="">Corso</a></li>
                 <li><a class="{{(Request::route()->getName() == 'student.index') ? 'active' : ''}}" href="{{route('student.index')}}">Dopo corso</a></li>
                 <li><a href="">Lezione gratuita</a></li>

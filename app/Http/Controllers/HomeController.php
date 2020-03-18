@@ -8,7 +8,7 @@ class HomeController extends Controller
 {
     public function index()
     {   
-        $students = config('students.students');
+        // $students = config('students.students');
         
         return view('home.index');
     }
