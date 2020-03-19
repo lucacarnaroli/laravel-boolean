@@ -39,8 +39,7 @@ return [
             'id' => 3
         ]
 
-        ],
-
+        ],  
         'genders' => ['m', 'f', 'all']
 
 ];

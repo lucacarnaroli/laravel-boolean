@@ -3,9 +3,11 @@
 @section('content')
     <select name="filter" id="filter">
         <option value="all">All</option>
-        {{-- @foreach ($genders as $gender)
-            <option value="{{$gender}}">{{($gender == 'm') ? 'uomo' : 'donna'}}</option>
-        @endforeach --}}
+        @foreach ($genders as $gender)
+            <option value="{{$gender}}">
+                {{($gender === 'm') ? 'uomo' : 'donna'}}
+            </option>
+        @endforeach
     </select>
     <div class="box-card">
         @foreach (config('students.students') as $key => $student)

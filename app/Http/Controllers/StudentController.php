@@ -12,6 +12,7 @@ class StudentController extends Controller
     public function __construct()
     {
         $this->getStudents();
+        $this->getGenders();
     }
     public function index()
     {
@@ -39,5 +40,9 @@ class StudentController extends Controller
     {
         $this->students = config('students.students');
         // dd(config('students.students'));
+    }
+    public function getGenders()
+    {
+        $this->genders = config('students.genders');
     }
 }
