@@ -9,6 +9,6 @@ class StudentController extends Controller
 {
     public function gender(Request $request)
     {
-       
+       $data = $request->all();
     }
 }

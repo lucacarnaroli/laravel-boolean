@@ -5,7 +5,7 @@
         <option value="all">All</option>
         @foreach ($genders as $gender)
             <option value="{{$gender}}">
-                {{($gender === 'm') ? 'uomo' : 'donna'}}
+                {{($gender == 'm') ? 'uomo' : 'donna'}}
             </option>
         @endforeach
     </select>
@@ -29,3 +29,6 @@
     </div>
 @endsection
 
+@section('script')
+<script src="{{asset('js/app.js')}}"></script>
+@endsection

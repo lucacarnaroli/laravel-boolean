@@ -8,7 +8,7 @@
     </main>
 
     <footer>
-        
+        @yield('footer')
     </footer>
-
+        @yield('script')
 @include('partials._footer')
