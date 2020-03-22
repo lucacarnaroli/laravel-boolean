@@ -2,11 +2,8 @@
 
 @section('content')
     <select name="filter" id="filter">
-        <option value="all">All</option>
         @foreach ($genders as $gender)
-            <option value="{{$gender}}">
-                {{($gender == 'm') ? 'uomo' : 'donna'}}
-            </option>
+            <option value="{{$gender}}">{{$gender}}</option>
         @endforeach
     </select>
     <div class="box-card">
@@ -30,5 +27,5 @@
 @endsection
 
 @section('script')
-<script src="{{asset('js/app.js')}}"></script>
+    <script src="{{asset('js/app.js')}}"></script>
 @endsection

@@ -13,8 +13,9 @@ class StudentController extends Controller
 
     public function __construct()
     {
+        // ::all prende tutto cio che sta nel db
         $this->students = Student::all();
-        dd($this->students);
+        // dd($this->students);
         $this->getGenders();
         
     }
@@ -32,7 +33,7 @@ class StudentController extends Controller
 
     public function show($id)
     {
-        if (!array_key_exists($id, $this->students)) {
+        if (!isset($id, $this->students)) {
             abort('404');
         };
         $student = $this->students[$id];
